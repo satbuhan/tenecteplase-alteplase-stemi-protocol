@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tenecteplase versus Alteplase for Fibrinolysis in STEMI</title>
+<meta name="description" content="An interactive, referenced walkthrough of the decision algorithm for fibrinolytic agent selection and dosing in ST-segment elevation myocardial infarction (STEMI) when timely primary PCI is not available.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=1">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+</head>
+<body>
+
+<header class="masthead">
+  <h1>Fibrinolysis in STEMI When Timely Primary PCI Is Not Available: Tenecteplase versus Alteplase</h1>
+  <p class="masthead__byline">
+    <strong>Dr. Özgür Karcıoğlu</strong> &amp; <strong>Dr. Satuk Buğra Han Bozatlı</strong>
+    &nbsp;— select any box below to read the reasoning and sources behind that step.
+  </p>
+  <p class="masthead__disclaimer">
+    Educational / academic reference tool, not a substitute for institutional protocol or
+    clinical judgement at the bedside. Drug doses shown reflect the algorithm as authored;
+    verify against current local protocol before clinical use.
+  </p>
+</header>
+
+<main>
+  <div class="workstation">
+    <section class="scope" aria-label="Interactive flowchart">
+      <p class="scope__hint">Scroll sideways and pinch to zoom — this is the full diagram, same as on desktop.</p>
+      <div class="flow" id="flow">
+        <svg class="edges" id="edges" aria-hidden="true"></svg>
+        <!-- nodes are rendered here by app.js from content.js -->
+      </div>
+    </section>
+
+    <aside class="readout" id="readout" aria-live="polite">
+      <button class="readout__close" id="readoutClose" type="button">Close ✕</button>
+      <div class="readout__idle" id="readoutIdle">
+        Select any box in the diagram to see what it means, why the algorithm
+        calls for it, and the sources behind it.
+      </div>
+      <div id="readoutContent" hidden></div>
+    </aside>
+  </div>
+
+  <div class="scope-backdrop" id="backdrop"></div>
+
+  <section class="references" aria-label="References">
+    <details id="references">
+      <summary>References <span class="count" id="refCount"></span></summary>
+      <ol id="referencesList"></ol>
+    </details>
+  </section>
+
+  <p class="abbrev-note">
+    BP, blood pressure; CI, confidence interval; ECG, electrocardiogram; FMC, first medical
+    contact; GRADE, Grading of Recommendations Assessment, Development and Evaluation; HR,
+    hazard ratio; ICH, intracranial haemorrhage; IV, intravenous; LBBB, left bundle branch
+    block; MACCE, major adverse cardiovascular (and cerebrovascular) events; MCID, minimal
+    clinically important difference; PCI, percutaneous coronary intervention; rhTNK-tPA,
+    recombinant human TNK tissue-type plasminogen activator; RoB 2, revised Cochrane
+    risk-of-bias tool for randomised trials; ROBINS-I, Risk Of Bias In Non-randomised Studies
+    of Interventions; RR, relative risk; rt-PA, recombinant tissue-type plasminogen activator;
+    STEMI, ST-segment elevation myocardial infarction; TIMI, Thrombolysis in Myocardial
+    Infarction (flow grade); UFH, unfractionated heparin.
+  </p>
+</main>
+
+<footer class="site">
+  <a href="https://satbuhan.github.io/clinical-algorithm-atlas/" target="_blank" rel="noopener">← Clinical Algorithm Atlas</a>
+  <span>Built as a companion to the other protocols, same methodology.</span>
+  <a href="https://satbuhan.github.io/aortic-dissection-protocol/" target="_blank" rel="noopener">Acute aortic dissection protocol →</a>
+  <a href="https://satbuhan.github.io/agitation-delirium-protocol/" target="_blank" rel="noopener">Butyrophenone selection — agitation &amp; delirium →</a>
+  <a href="https://satbuhan.github.io/influenza-antiviral-protocol/" target="_blank" rel="noopener">Influenza antiviral selection →</a>
+  <a href="https://satbuhan.github.io/nsaid-pain-protocol/" target="_blank" rel="noopener">Dexketoprofen vs ibuprofen →</a>
+  <a href="https://satbuhan.github.io/anticoagulant-reversal-protocol/" target="_blank" rel="noopener">Anticoagulant reversal in GI haemorrhage →</a>
+  <a href="https://satbuhan.github.io/obesity-critical-care-protocol/" target="_blank" rel="noopener">The adult with obesity in emergency &amp; critical care →</a>
+  <a href="https://satbuhan.github.io/dapagliflozin-overdose-protocol/" target="_blank" rel="noopener">Dapagliflozin / SGLT2 inhibitor overdose →</a>
+  <a href="https://satbuhan.github.io/lidocaine-prilocaine-protocol/" target="_blank" rel="noopener">Lidocaine vs prilocaine for laceration repair →</a>
+  <a href="https://satbuhan.github.io/pte-thrombolysis-protocol/" target="_blank" rel="noopener">Reperfusion therapy in acute pulmonary thromboembolism →</a>
+  <a href="https://satbuhan.github.io/lmwh-nste-acs-protocol/" target="_blank" rel="noopener">LMWH selection &amp; renal dosing in NSTE-ACS →</a>
+  <a href="https://satbuhan.github.io/ketamine-head-injury-protocol/" target="_blank" rel="noopener">Ketamine in head injury — safety &amp; complication management →</a>
+  <a href="https://satbuhan.github.io/midazolam-clonazepam-protocol/" target="_blank" rel="noopener">Midazolam versus clonazepam →</a>
+  <a href="https://satbuhan.github.io/vasopressor-shock-protocol/" target="_blank" rel="noopener">Vasopressor selection in shock — aminergic agent algorithm →</a>
+  <a href="https://satbuhan.github.io/wbct-trauma-protocol/" target="_blank" rel="noopener">Whole-body CT in traumatic circulatory shock →</a>
+  <a href="https://satbuhan.github.io/epinephrine-revisited-protocol/" target="_blank" rel="noopener">Epinephrine/Adrenaline revisited — contemporary decision-making algorithm →</a>
+  <a href="https://satbuhan.github.io/ketamine-indications-protocol/" target="_blank" rel="noopener">Ketamine in emergency and critical care — indication-based decision algorithm →</a>
+  <a href="https://github.com/satbuhan" target="_blank" rel="noopener">github.com/satbuhan</a>
+  <span>CC BY-NC-SA 4.0</span>
+</footer>
+
+<script src="assets/content.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>
