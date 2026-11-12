@@ -24,7 +24,8 @@ hand-drawn flowcharts or manuscript figures. Existing tools:
 `ccb-toxicity-protocol`, `haloperidol-adjunct-protocol`,
 `succinylcholine-rocuronium-protocol`,
 `geriatric-pain-protocol`,
-`metoclopramide-ondansetron-protocol`
+`metoclopramide-ondansetron-protocol`,
+`spontaneous-pneumothorax-protocol`
 (GitHub account: satbuhan). Hub page listing all of them:
 `clinical-algorithm-atlas`.
 
